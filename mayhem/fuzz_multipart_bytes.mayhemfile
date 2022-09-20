@@ -1,0 +1,7 @@
+project: multer-rs
+target: fuzz-multipart-bytes
+
+cmds:
+  - cmd: /fuzz_multipart_bytes
+  - cmd: /fuzz_multipart_bytes_no_inst @@
+    libfuzzer: false
